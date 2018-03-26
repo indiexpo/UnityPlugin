@@ -8,9 +8,9 @@ To install this plugin simply import IndiexpoAPI_WebGL.unitypackage in Unity or 
 After the installation make sure that the file IndiexpoAPI_Plugin.jslib is correctly placed in:
 your_project_folder\Assets\Plugins
 
-To send score you only need to use this code: 
+**To send score you only need to use this code: 
 IndiexpoAPI_WebGL.SendScore(100); 
-where 100 is the score.
+where 100 is the score.**
 
 ## EXTRA
 ###### Check if the User is logged
