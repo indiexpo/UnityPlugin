@@ -16,7 +16,7 @@ your_project_folder\Assets\Plugins
 
 This method will save the score locally and check if the score the user are trying to send is greater than the locally stored one.
 This will help reduce load on the servers.
-The method IndiexpoAPI_WebGL.SendScore(int s) is not reccomended to use as it simply send the score without any checks, use if you are implementing your own checks.
+The method *IndiexpoAPI_WebGL.SendScore(int s)* is not reccomended to use as it simply send the score without any checks, use if you are implementing your own checks.
 
 ## EXTRA
 ###### Check if the User is logged
