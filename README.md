@@ -1,5 +1,5 @@
 # UnityPlugin
-It is a plugin for Unity to add the indiexpo Score System to your WebGL games.
+It is a plugin for Unity to add the indiexpo Score System to your WebGL games (v. 1.0.0.1).
 
 With this plugin you'll be able to send user's score to the Indiexpo's server, it work only for WebGl builds.
 
@@ -8,9 +8,15 @@ To install this plugin simply import IndiexpoAPI_WebGL.unitypackage in Unity or 
 After the installation make sure that the file IndiexpoAPI_Plugin.jslib is correctly placed in:
 your_project_folder\Assets\Plugins
 
-**To send score you only need to use this code: 
-IndiexpoAPI_WebGL.SendScore(100); 
-where 100 is the score.**
+**To send score you only need to use this code: **
+
+**IndiexpoAPI_WebGL.SaveScoreAndSend(100);**
+
+**where 100 is the score.**
+
+This method will save the score locally and check if the score the user are trying to send is greater than the locally stored one.
+This will help reduce load on the servers.
+The method IndiexpoAPI_WebGL.SendScore(int s) is not reccomended to use as it simply send the score without any checks, use if you are implementing your own checks.
 
 ## EXTRA
 ###### Check if the User is logged
